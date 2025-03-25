@@ -17,3 +17,15 @@ class ConcurrencyError(KeyValueStoreError):
 class TransactionError(KeyValueStoreError):
     """Exception raised when a transaction operation fails."""
     pass
+
+class SerializationError(KeyValueStoreError):
+    """Exception raised when serialization or deserialization fails."""
+    pass
+
+class ConcurrencyError(KeyValueStoreError):
+    """Exception raised for concurrency-related errors."""
+    pass
+
+class TransactionError(KeyValueStoreError):
+    """Exception raised when a transaction operation fails."""
+    pass

@@ -1,8 +1,10 @@
 import threading
-from typing import Dict, Any, Optional, List, Tuple
+from typing import Dict, Any, List, Tuple
+
+from src.storage.storage_interface import StorageInterface
 from src.utils.exceptions import KeyNotFoundError
 
-class MemoryStore:
+class MemoryStore(StorageInterface):
     """
     Simple in-memory key-value store
     This is the foundation for a distributed key-value database
